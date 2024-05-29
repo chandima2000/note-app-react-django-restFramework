@@ -7,7 +7,7 @@ import Login from './pages/Login'
 import NotFound from './pages/NotFound'
 
 
-function logout(){
+function Logout(){
   localStorage.clear()
   return <Navigate to="/login"/>
 }
@@ -41,6 +41,10 @@ export default function App() {
           <Route 
                 path='*' 
                 element={<NotFound/>}
+          />
+          <Route 
+                path='/logout' 
+                element={<Logout/>}
           />
       </Routes>
     </BrowserRouter>
