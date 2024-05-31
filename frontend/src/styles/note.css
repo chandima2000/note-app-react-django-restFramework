@@ -4,10 +4,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #8d8a8a;
-    max-width: 30%;
-   
-    
-   
+    max-width: 40%;
   }
   
   .note-title,.note-content, .note-date  {
@@ -24,7 +21,6 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    
   }
   
   .delete-button:hover {
