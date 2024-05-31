@@ -4,7 +4,7 @@ div {
   }
   
  body{
-    background-color: #f0ecec;
+    background-color: #000000;
   }
   /* Styles for the notes section */
   .notes-section {
@@ -44,6 +44,7 @@ div {
   form label {
     font-weight: bold;
     margin-top: 10px;
+    font-size: x-large;
   }
   
   form input,
@@ -75,4 +76,20 @@ div {
     font-size: 50px;
     background-color: rgb(57, 163, 212);
     text-align: center;
+  }
+
+  .logout{
+    background-color: #f44336; /* Red */
+    color: rgb(27, 26, 26);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .logout:hover{
+    background-color: #911313;
   }

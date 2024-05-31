@@ -8,7 +8,7 @@ export default function Notes({note,onDelete}) {
         <div className="flex-container-1">
         <p><span className='note-subs'>Title :</span> <span className="note-title">
             {note.title}   </span></p>
-            <p><span className='note-subs'>Content : </span><span className="note-content">
+            <p><span className='note-subs'>Content : </span><br/><br/><span className="note-content">
             {note.content}  </span></p>
             <p><span className='note-subs'>Published Date: </span><span className="note-date">
             {formattedDate}  </span></p>
@@ -19,6 +19,6 @@ export default function Notes({note,onDelete}) {
             </button>
         </div>
             
-        </div>
+    </div>
   )
 }

@@ -5,6 +5,10 @@
     border-radius: 5px;
     background-color: #8d8a8a;
     max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .note-title,.note-content, .note-date  {

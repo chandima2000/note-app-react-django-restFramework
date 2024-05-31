@@ -2,11 +2,14 @@ import { useState, useEffect } from "react";
 import api from "../api";
 import Note from '../components/Notes';
 import '../styles/home.css';
+import { useNavigate } from "react-router-dom";
+
 
 function Home() {
     const [notes, setNotes] = useState([]);
     const [content, setContent] = useState("");
     const [title, setTitle] = useState("");
+    const navigate = useNavigate();
 
     useEffect(() => {
         getNotes();
@@ -50,11 +53,20 @@ function Home() {
             .catch((err) => alert(err));
     };
 
+    const logOutBtn = () => {
+        navigate("/logout");
+    }
+
     return (
         <div className="container">
             <div className="flex-content-1">
-                <h2 className="home-title">Your Notes</h2>
+                <div className="your-notes">
+                    <button className="logout" onClick={logOutBtn}>Logout</button>
+                    <h2 className="home-title">Your Notes</h2>
+                </div>
+                
                 {notes.map((note) => <Note note={note} onDelete={deleteNote} key={note.id}/>)}
+               
             </div>
             <div className="flex-content-2">
              <h2 className="home-title">Create a New Note</h2>
@@ -81,6 +93,7 @@ function Home() {
                     <br />
                     <input type="submit" value="Submit"></input>
                 </form>
+                
             </div>
         </div>
     );
