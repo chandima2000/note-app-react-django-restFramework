@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import api from "../api";
 import Note from '../components/Notes';
-
+import '../styles/home.css';
 
 function Home() {
     const [notes, setNotes] = useState([]);
@@ -51,13 +51,13 @@ function Home() {
     };
 
     return (
-        <div>
+        <div className="container">
             <div className="flex-content-1">
-                <h2>Notes</h2>
+                <h2 className="home-title">Your Notes</h2>
                 {notes.map((note) => <Note note={note} onDelete={deleteNote} key={note.id}/>)}
             </div>
             <div className="flex-content-2">
-             <h2>Create a Note</h2>
+             <h2 className="home-title">Create a New Note</h2>
                 <form onSubmit={createNote}>
                     <label htmlFor="title">Title:</label>
                     <br />
