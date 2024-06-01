@@ -1,8 +1,11 @@
-# My Notes APP
+# My Notes App
 
 ## Overview
 This project is a full-stack web application built using React for the frontend, Django and Django REST framework for the backend, and PostgreSQL as the database.
-
+The main focus of this project is how to work with React, Django, Rest Framework and PostgreSQL Database together and how to deploy the project.
+This project is deployed to this 👉 https://choreo.dev/ website.
+- You can get handson experience "My-Notes-App" full-stack project through this Link 👉 https://a39fca2d-85ab-4360-bd49-68799635c80d.e1-us-east-azure.choreoapps.dev/register
+  
 ## Features
 - User Authentication
 - RESTful API
