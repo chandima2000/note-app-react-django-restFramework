@@ -37,7 +37,7 @@ This project is deployed to this 👉 https://choreo.dev/ website.
 ### Clone the repository
 - Use the following URL to clone the repository:
 ```bash
-
+https://github.com/chandima2000/noteApp-react-django-restFramework.git
 ```
 
 ### Frontend
